@@ -1,25 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonial Section</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonial Section</title>
+  <style>
+    /* Main container styling */
+    .testimonial-container {
+      padding: 40px;
+      background-color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Individual testimonial box styling */
+    .testimonial-box {
+      padding: 20px;
+      border: 1px solid #ddd;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    /* Testimonial text styling */
+    .testimonial-text {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    /* Author text styling */
+    .author {
+      text-align: right;
+      font-style: italic;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-    <section class="testimonials">
-        <div class="testimonial">
-            <p class="testimonial-text">"This is the best service I have ever used! The team was friendly, and the results were outstanding!"</p>
-            <p class="author">- John Doe</p>
-        </div>
-        <div class="testimonial">
-            <p class="testimonial-text">"A truly remarkable experience. Highly recommend to anyone looking for high-quality work."</p>
-            <p class="author">- Jane Smith</p>
-        </div>
-        <div class="testimonial">
-            <p class="testimonial-text">"I was blown away by the professionalism and attention to detail. Will definitely come back!"</p>
-            <p class="author">- Michael Johnson</p>
-        </div>
-    </section>
+  <div class="testimonial-container">
+    <div class="testimonial-box">
+      <p class="testimonial-text">"This is the best service I've ever used. Highly recommended to everyone!"</p>
+      <p class="author">-John Doe</p>
+    </div>
+    <div class="testimonial-box">
+      <p class="testimonial-text">"Amazing experience. The team was super helpful and attentive!"</p>
+      <p class="author">-Jane Smith</p>
+    </div>
+    <div class="testimonial-box">
+      <p class="testimonial-text">"I couldn't be happier with the results. Thank you for your excellent work!"</p>
+      <p class="author">-Michael Brown</p>
+    </div>
+  </div>
 </body>
 </html>
