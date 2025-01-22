@@ -3,117 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog Adoption Application</title>
+    <title>Testimonial Section</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            background-color: #f5f5f5;
         }
 
-        .form-container {
-            background-color: #ffffff;
-            padding: 20px 30px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            width: 100%;
+        .testimonial-container {
+            padding: 40px;
+            background-color: #f5f5f5;
         }
 
-        .form-container h1 {
-            text-align: center;
-            margin-bottom: 20px;
+        .testimonial {
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial p {
+            margin: 0 0 10px;
+            font-size: 16px;
             color: #333;
         }
 
-        .form-container label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #555;
-        }
-
-        .form-container input[type="text"],
-        .form-container select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+        .testimonial .author {
+            text-align: right;
+            font-style: italic;
             font-size: 14px;
-        }
-
-        .form-container input[type="checkbox"] {
-            margin-right: 10px;
-        }
-
-        .form-container .checkbox-label {
-            font-weight: normal;
             color: #555;
-            display: inline-block;
-            margin-bottom: 15px;
-        }
-
-        .form-container select {
-            height: auto;
-        }
-
-        .form-container input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            width: 100%;
-        }
-
-        .form-container input[type="submit"]:hover {
-            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <div class="form-container">
-        <h1>Dog Adoption Application</h1>
-        <form>
-            <!-- Name Field -->
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Name" required>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <p>"This product has changed my life for the better! Highly recommended."</p>
+            <p class="author">- John Doe</p>
+        </div>
 
-            <!-- Phone Number Field -->
-            <label for="phone">Phone Number</label>
-            <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+        <div class="testimonial">
+            <p>"Excellent service and quality. I couldn't be happier with my experience."</p>
+            <p class="author">- Jane Smith</p>
+        </div>
 
-            <!-- Address Field -->
-            <label for="address">Address</label>
-            <input type="text" id="address" name="address" placeholder="Address" required>
-
-            <!-- Checkbox -->
-            <label>
-                <input type="checkbox" id="checkbox" name="checkbox" value="Have you ever lived with a Dog before?">
-                <span class="checkbox-label">Have you ever lived with a Dog before?</span>
-            </label>
-
-            <!-- Preferred Breeds Multi-Select -->
-            <label for="breeds">Please select your preferred breeds</label>
-            <select id="breeds" name="breeds[]" multiple required>
-                <option value="labrador">Labrador</option>
-                <option value="golden-retriever">Golden Retriever</option>
-                <option value="beagle">Beagle</option>
-                <option value="bulldog">Bulldog</option>
-                <option value="german-shepherd">German Shepherd</option>
-            </select>
-
-            <!-- Submit Button -->
-            <input type="submit" value="Submit">
-        </form>
+        <div class="testimonial">
+            <p>"Absolutely outstanding! Will definitely come back for more."</p>
+            <p class="author">- Emily Johnson</p>
+        </div>
     </div>
 </body>
 </html>
