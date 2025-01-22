@@ -55,10 +55,12 @@
         .form-container .checkbox-label {
             font-weight: normal;
             color: #555;
+            display: inline-block;
+            margin-bottom: 15px;
         }
 
         .form-container select {
-            height: 100px;
+            height: auto;
         }
 
         .form-container input[type="submit"] {
@@ -81,29 +83,35 @@
     <div class="form-container">
         <h1>Dog Adoption Application</h1>
         <form>
+            <!-- Name Field -->
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Name" required>
 
+            <!-- Phone Number Field -->
             <label for="phone">Phone Number</label>
             <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
 
+            <!-- Address Field -->
             <label for="address">Address</label>
             <input type="text" id="address" name="address" placeholder="Address" required>
 
+            <!-- Checkbox -->
             <label>
                 <input type="checkbox" id="checkbox" name="checkbox" value="Have you ever lived with a Dog before?">
                 <span class="checkbox-label">Have you ever lived with a Dog before?</span>
             </label>
 
+            <!-- Preferred Breeds Multi-Select -->
             <label for="breeds">Please select your preferred breeds</label>
-            <select id="breeds" name="breeds" multiple required>
+            <select id="breeds" name="breeds[]" multiple required>
                 <option value="labrador">Labrador</option>
                 <option value="golden-retriever">Golden Retriever</option>
                 <option value="beagle">Beagle</option>
+                <option value="bulldog">Bulldog</option>
                 <option value="german-shepherd">German Shepherd</option>
-                <option value="poodle">Poodle</option>
             </select>
 
+            <!-- Submit Button -->
             <input type="submit" value="Submit">
         </form>
     </div>
